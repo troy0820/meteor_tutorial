@@ -7,10 +7,14 @@
   <h1 class="page-header">Troy's tutorial App</h1>
 
   {{> hello}}
+  {{> reset}}
 </div>
 </body>
 
 <template name="hello">
   <button class="btn btn-primary btn-lg">Click Me</button>
   <p>Number of times you pressed the button: {{counter}}</p>
+</template>
+<template name="reset">
+ <button class="btn btn-primary btn-lg">Reset</button>
 </template>

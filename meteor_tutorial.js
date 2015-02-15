@@ -7,6 +7,13 @@ if (Meteor.isClient) {
       return Session.get("counter");
     }
   });
+ 
+  Template.reset.events({
+    'click button': function() {
+	return Session.set("counter",0);
+		}
+	});
+  
 
   Template.hello.events({
     'click button': function () {
